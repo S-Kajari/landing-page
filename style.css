@@ -33,8 +33,7 @@ topstory{
     display: flex;
     justify-content: space-between;
     padding: 50px 50px;
-    column-gap: 64px;
-    row-gap: 10px;
+    gap: 16px;
     flex-wrap: wrap-reverse;
 }
 tsleft{
@@ -44,15 +43,18 @@ tsleft{
     width: 40%;
     min-width: 450px;
     flex-shrink: 1;
+    gap: 16px;
 }
 .ts_main{
     color: #F9FAF8;
     font-size: 48px;
     font-weight: 900;
+    margin: 0;
 }
 .ts_sub{
     color: #e5e7eb;
     font-size: 18px;
+    margin: 0;
 }
 .ts_button{
     background-color: #3882F6;
@@ -63,6 +65,8 @@ tsleft{
     font-weight: 600;
     width: 150px;
     border-color: white;
+    margin: 0;
+
 }
 .ts_img{
     min-width: 450px;
