@@ -9,7 +9,7 @@ header {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    padding:0 10%; 
+    padding:10px 50px; 
 }
 
 .header_logo{
@@ -32,25 +32,27 @@ topstory{
     background-color: #1F2937;
     display: flex;
     justify-content: space-between;
-    padding:64px 10%;
-    gap: 64px;
+    padding: 50px 50px;
+    column-gap: 64px;
+    row-gap: 10px;
+    flex-wrap: wrap-reverse;
 }
 tsleft{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 50%;
+    width: 40%;
+    min-width: 450px;
+    flex-shrink: 1;
 }
 .ts_main{
     color: #F9FAF8;
     font-size: 48px;
     font-weight: 900;
-    margin: 0;
 }
 .ts_sub{
     color: #e5e7eb;
     font-size: 18px;
-    margin: 0;
 }
 .ts_button{
     background-color: #3882F6;
@@ -59,18 +61,22 @@ tsleft{
     border-radius: 8px;
     font-size: 18px;
     font-weight: 600;
-    width: 30%;
-    margin: 0;
+    width: 150px;
     border-color: white;
 }
 .ts_img{
-    width: 50%;
+    min-width: 450px;
+    width: 40%;
+    height: 40%;
+    overflow: hidden;
+    display: flex;
+    flex-shrink: 1;  
 }
 info{
     background-color: white;
     display: flex;
     flex-direction: column;
-    padding:0 20% 64px 20%; 
+    padding:0 100px 64px 100px; 
 }
 .info-title {
     font-size: 36px;
@@ -82,16 +88,16 @@ info{
 info-tabs{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     gap: 64px;
     
 }
 .info{
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    width: 250px;
 }
 .info-img{
-    width: 100%;
+    width: 250px;
     border-style: solid;
     border-color: #3882F6;
     border-width: 3px;
@@ -104,7 +110,7 @@ quote{
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    padding: 64px 20%;
+    padding: 64px 100px;
     
 }
 .quote{
@@ -120,11 +126,12 @@ quote{
 }
 lower{
     background-color: white;
-    padding: 64px 20%;
+    padding: 64px 100px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .box{
     color: white;
     background-color: #3882F6;
@@ -135,9 +142,13 @@ lower{
     gap: 16px;
     padding: 32px 64px;
     justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .boxtitle{
     font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
 }
 .boxtext{
     font-size: 18px;
