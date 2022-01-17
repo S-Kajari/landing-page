@@ -40,10 +40,10 @@ tsleft{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 40%;
-    min-width: 450px;
     flex-shrink: 1;
     gap: 16px;
+    min-width: 350px;
+    max-width: 600px;
 }
 .ts_main{
     color: #F9FAF8;
@@ -69,12 +69,12 @@ tsleft{
 
 }
 .ts_img{
-    min-width: 450px;
-    width: 40%;
-    height: 40%;
-    overflow: hidden;
     display: flex;
-    flex-shrink: 1;  
+    justify-content: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+    min-width: 350px;
+    max-width: 600px;
 }
 info{
     background-color: white;
