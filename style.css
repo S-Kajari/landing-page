@@ -31,10 +31,9 @@ ul{
 topstory{
     background-color: #1F2937;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 50px 50px;
     gap: 16px;
-    flex-wrap: wrap-reverse;
 }
 tsleft{
     display: flex;
@@ -42,8 +41,8 @@ tsleft{
     justify-content: space-between;
     flex-shrink: 1;
     gap: 16px;
-    min-width: 350px;
-    max-width: 600px;
+    flex-basis: 50%;
+
 }
 .ts_main{
     color: #F9FAF8;
@@ -70,11 +69,13 @@ tsleft{
 }
 .ts_img{
     display: flex;
-    justify-content: center;
-    flex-shrink: 1;
-    flex-grow: 1;
-    min-width: 350px;
-    max-width: 600px;
+    align-items: center;
+    flex-basis: 50%;
+}
+.img{
+    width: 100%;
+    height: auto;
+    
 }
 info{
     background-color: white;
